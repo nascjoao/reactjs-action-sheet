@@ -1,5 +1,5 @@
 {
-    "name": "react-action-sheet",
+    "name": "reactjs-action-sheet",
     "version": "0.1.0",
     "description": "A React version of the iOS action sheet",
     "main": "dist/index.js",

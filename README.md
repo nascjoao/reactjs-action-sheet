@@ -1,4 +1,5 @@
 # React.js Action Sheet
+
 https://github.com/nascjoao/reactjs-action-sheet/assets/56273267/a10120e0-091f-4233-b2bb-86396c6296e8
 
 **reactjs-action-sheet** is built on top of [Vaul](https://github.com/emilkowalski/vaul).
@@ -14,24 +15,22 @@ To start using the library, install it in your project:,
 npm install reactjs-action-sheet
 ```
 
-Use the drawer in your app.
+Use the action sheet in your app.
 
 ```jsx
-import ActionSheet, { Action } from 'reactjs-action-sheet';
+import ActionSheet, { Action } from "reactjs-action-sheet";
 
 function MyComponent() {
-  return (
-    <ActionSheet
-          actions={[
-            <Action>Action 1</Action>,
-            <Action>Action 2</Action>,
-            <Action destructive>Action 3</Action>,
-          ]}
+    return (
+        <ActionSheet
+            actions={[
+                <Action>Action 1</Action>,
+                <Action>Action 2</Action>,
+                <Action destructive>Action 3</Action>,
+            ]}
         >
-          <button>
-            open
-          </button>
+            <button>open</button>
         </ActionSheet>
-  );
+    );
 }
 ```

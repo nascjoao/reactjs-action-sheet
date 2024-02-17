@@ -31,6 +31,7 @@
     "author": "nascjoao",
     "license": "MIT",
     "devDependencies": {
+        "@types/react": "^18.2.56",
         "bunchee": "^4.4.6",
         "classnames": "^2.5.1",
         "react": "^18.2.0"

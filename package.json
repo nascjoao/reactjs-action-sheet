@@ -1,0 +1,41 @@
+{
+    "name": "react-action-sheet",
+    "version": "0.1.0",
+    "description": "A React version of the iOS action sheet",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        "import": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "require": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "bunchee -m",
+        "deploy": "npm run build && npm version patch && npm publish"
+    },
+    "keywords": [
+        "react",
+        "drawer",
+        "dialog",
+        "modal",
+        "action sheet",
+        "iOS"
+    ],
+    "author": "nascjoao",
+    "license": "MIT",
+    "devDependencies": {
+        "bunchee": "^4.4.6",
+        "classnames": "^2.5.1",
+        "react": "^18.2.0"
+    },
+    "dependencies": {
+        "vaul": "^0.9.0"
+    }
+}

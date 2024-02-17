@@ -1,0 +1,72 @@
+.ras-title {
+    background: rgb(255 255 255 / 0.7);
+    font-size: 13px;
+    margin: 0;
+    padding: 12px;
+    color: rgb(0 0 0 / 0.4);
+    font-weight: 600;
+    border-bottom: 0.5px solid rgb(0 0 0 / 0.4);
+}
+
+.ras-actions {
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.ras-action {
+    width: 100%;
+    font-size: 1.25rem;
+    background: rgb(255 255 255 / 0.7);
+    border: 0;
+    padding: 1rem;
+    color: #0078FF;
+    position: relative;
+    cursor: pointer;
+}
+
+.ras-action.ras-destructive {
+    color: #FF3B30;
+}
+
+.ras-action + .ras-action::after {
+    content: '';
+    background: rgb(0 0 0 / 0.4);
+    position: absolute;
+    height: 0.25px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.ras-cancel {
+    background: white;
+    border-radius: 14px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.ras-container {
+    transform: translateX(-50%);
+    padding-bottom: 1.25rem;
+}
+
+.ras-content {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: calc(100% - 1rem);
+    max-width: 48rem;
+    z-index: 1;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ras-overlay {
+    background: rgb(0 0 0 / 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

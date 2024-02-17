@@ -18,7 +18,7 @@
     },
     "scripts": {
         "build": "bunchee -m",
-        "deploy": "npm run build && npm version patch && npm publish"
+        "npm:publish": "npm run build && npm version patch && npm publish"
     },
     "keywords": [
         "react",
